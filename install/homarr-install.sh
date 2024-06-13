@@ -39,7 +39,7 @@ msg_info "Installing Homarr (Patience)"
 $STD git clone -b dev https://github.com/ajnart/homarr.git /opt/homarr
 cat <<EOF >/opt/homarr/.env
 DATABASE_URL="file:./database/db.sqlite"
-NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_URL="http://localhost:80"
 NEXTAUTH_SECRET="$(openssl rand -base64 32)"
 NEXT_PUBLIC_DISABLE_ANALYTICS="true"
 DEFAULT_COLOR_SCHEME="dark"
